@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas">浏览器不支持canvas</canvas>
+    <script src="dist/CheckCode.min.js"></script>
+    <script>
+        var cc = new CheckCode("#canvas", {
+            num: 4, // 验证码个数 
+            lineNum: 5, // 干扰线个数
+            dotNum: 20, // 干扰点个数
+        });
+        // 生成
+        var res=cc.draw();
+        console.log(res);
+    </script>
+</body>
+
+</html>

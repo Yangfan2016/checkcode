@@ -1,29 +1,3 @@
-## draw-checkcode  [In progress]
-
-This is a tool to draw checkcode (>=IE9)
-
-![checkcode](https://raw.githubusercontent.com/Yangfan2016/PicBed/master/Blog/draw-checkcode.gif)
-
-### Example
-```js
-var cc = new CheckCode("#canvas");
-cc.draw();
-```
-
-### API
-check this file: `dist/CheckCode.min.js`
-
-### Contributing
-- Fork this Repo first
-- Clone your Repo
-- Install dependencies by `$ npm install`
-- Checkout a feature branch
-- Feel free to add your features
-- Make sure your features are fully tested
-- Publish your local branch, Open a pull request
-- Enjoy hacking <3
-
-### MIT license
 Copyright (c) 2018 yangfan2016 &lt;15234408101@163.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -43,7 +17,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
----
-![docor]()
-built upon love by [docor](https://github.com/turingou/docor.git) v0.3.0
