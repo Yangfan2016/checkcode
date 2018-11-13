@@ -1,4 +1,5 @@
-## checkcode ![NPM version](https://img.shields.io/npm/v/checkcode.svg?style=flat)
+## checkcode 
+[![NPM version](https://img.shields.io/npm/v/checkcode.svg?style=flat)](https://www.npmjs.com/package/checkcode)
 
 A very small tool drawing check code, and support the IE 9
 
