@@ -41,11 +41,14 @@ console.log(res);
 ### API
 
 CheckCode(el[,config])
+
 | params | memo | type | default |
 | :----: | :--: | :--: | :-----: |
 | el | The selector of your canvas element | string | -- |
 | config | config | iConfig | -- |
+
 iConfig
+
 | params | memo | type | default |
 | :----: | :--: | :--: | :-----: |
 | num | The number of checkcode | number | 4 |
@@ -53,6 +56,7 @@ iConfig
 | dotNum | The number of interference dots | number | 20 |
 
 CheckCode#draw
+
 | method | memo | return |
 | :----: | :--: | :--: |
 | draw | Drawing and returns the contents of the checkcode |string |
