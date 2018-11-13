@@ -1,4 +1,4 @@
-import "core-js/fn/object/assign";
+import "./polyfills/object-assign";
 
 
 interface iConfig {

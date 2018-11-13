@@ -1,9 +1,9 @@
 {
-  "name": "draw-checkcode",
+  "name": "checkcode",
   "version": "0.1.0",
   "description": "This is a tool to draw checkcode",
   "main": "dist/CheckCode.min.js",
-  "repository": "https://github.com/Yangfan2016/draw-checkcode.git",
+  "repository": "https://github.com/Yangfan2016/checkcode.git",
   "author": "yangfan2016 <15234408101@163.com>",
   "license": "MIT",
   "scripts": {
@@ -11,14 +11,10 @@
   },
   "devDependencies": {
     "rollup": "^0.66.6",
-    "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-json": "^3.1.0",
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-terser": "^3.0.0",
     "rollup-plugin-typescript2": "^0.17.2",
     "typescript": "^3.1.5"
-  },
-  "dependencies": {
-    "core-js": "^2.5.7"
   }
 }

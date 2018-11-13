@@ -1,17 +1,60 @@
-## draw-checkcode  [In progress]
+## checkcode ![NPM version](https://img.shields.io/npm/v/checkcode.svg?style=flat)
 
-This is a tool to draw checkcode (>=IE9)
+A very small tool drawing check code, and support the IE 9
 
 ![checkcode](https://raw.githubusercontent.com/Yangfan2016/PicBed/master/Blog/draw-checkcode.gif)
 
-### Example
+### Installation
+```bash
+$ npm install checkcode
+```
+### Import
+- ESM
 ```js
-var cc = new CheckCode("#canvas");
-cc.draw();
+import CheckCode from 'checkcode';
+```
+- CommonJS
+```js
+var CheckCode = require('checkcode');
+```
+- CDN
+
+```html
+<script src="https://unpkg.com/checkcode/dist/CheckCode.min.js"></script>
+```
+
+### Quick Start
+```js
+// 初始化
+var cc = new CheckCode("#canvas", {
+    num: 4, // 验证码个数 
+    lineNum: 5, // 干扰线个数
+    dotNum: 20, // 干扰点个数
+});
+// 生成验证码
+var res=cc.draw();// 返回验证码的文本内容
+console.log(res);
+
 ```
 
 ### API
-check this file: `dist/CheckCode.min.js`
+
+CheckCode(el[,config])
+| params | memo | type | default |
+| :----: | :--: | :--: | :-----: |
+| el | The selector of your canvas element | string | -- |
+| config | config | iConfig | -- |
+iConfig
+| params | memo | type | default |
+| :----: | :--: | :--: | :-----: |
+| num | The number of checkcode | number | 4 |
+| lineNum | The number of interference lines | number | 5 |
+| dotNum | The number of interference dots | number | 20 |
+
+CheckCode#draw
+| method | memo | return |
+| :----: | :--: | :--: |
+| draw | Drawing and returns the contents of the checkcode |string |
 
 ### Contributing
 - Fork this Repo first
@@ -45,5 +88,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ---
-![docor]()
 built upon love by [docor](https://github.com/turingou/docor.git) v0.3.0
