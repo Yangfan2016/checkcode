@@ -1,6 +1,6 @@
 {
   "name": "checkcode",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "This is a tool to draw checkcode",
   "main": "dist/CheckCode.min.js",
   "repository": "https://github.com/Yangfan2016/checkcode.git",
