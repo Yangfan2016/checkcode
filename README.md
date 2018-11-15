@@ -36,16 +36,13 @@ var CheckCode = require('checkcode');
 ```js
 // 初始化
 var ctx=document.getElementById("cvs").getContext("2d");
-var cc = new CheckCode(ctx, {
+new CheckCode(ctx, {
     num: 4, // 验证码个数 
     lineNum: 5, // 干扰线个数
     dotNum: 20, // 干扰点个数
     canvasWidth:120, // 画布的宽，与canvas的width属性值相同
     canvasHeight:40, // 画布的高，与canvas的height属性值相同
-});
-// 生成验证码
-var res=cc.paint();// 返回验证码的文本内容
-console.log(res);
+}).paint();// 返回验证码的文本内容
 
 ```
 
@@ -68,7 +65,7 @@ CheckCode(el[,config])
 
 | params | memo | type | default |
 | :----: | :--: | :--: | :-----: |
-| el | The selector of your canvas element | string | -- |
+| ctx | The context of your canvas element | string | -- |
 | config | config | iConfig | -- |
 
 iConfig
@@ -78,12 +75,14 @@ iConfig
 | num | The number of checkcode | number | 4 |
 | lineNum | The number of interference lines | number | 5 |
 | dotNum | The number of interference dots | number | 20 |
+| canvasWidth | The width of your canvas element | number | 120 |
+| canvasHeight | The height of your canvas elements | number | 40 |
 
 CheckCode#draw
 
 | method | memo | return |
 | :----: | :--: | :--: |
-| draw | Drawing and returns the contents of the checkcode |string |
+| paint | Drawing and returns the contents of the checkcode |string |
 
 ### Contributing
 - Fork this Repo first
