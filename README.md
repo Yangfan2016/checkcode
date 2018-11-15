@@ -61,12 +61,12 @@ new CheckCode(ctx).paint();
 
 ### API
 
-CheckCode(el[,config])
+CheckCode(ctx[,options])
 
 | params | memo | type | default |
 | :----: | :--: | :--: | :-----: |
 | ctx | The context of your canvas element | string | -- |
-| config | config | iConfig | -- |
+| options | config | iConfig | -- |
 
 iConfig
 
@@ -76,7 +76,7 @@ iConfig
 | lineNum | The number of interference lines | number | 5 |
 | dotNum | The number of interference dots | number | 20 |
 | canvasWidth | The width of your canvas element | number | 120 |
-| canvasHeight | The height of your canvas elements | number | 40 |
+| canvasHeight | The height of your canvas element | number | 40 |
 
 CheckCode#draw
 
